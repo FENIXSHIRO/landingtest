@@ -1,0 +1,19 @@
+.banner {
+    display: flex;
+    height: 600px;
+    background-image: url("../../../public/img/bg.png");
+
+    &__container {
+        height: 340px;
+        width: 709px;
+        margin-top: 158px;
+        margin-left: 70px;
+    }
+
+    &__text {
+        font-size: 56px;
+        margin: 0;
+        line-height: 100%;
+        margin-bottom: 60px;
+    }
+}

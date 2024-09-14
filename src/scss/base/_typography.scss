@@ -1,0 +1,21 @@
+@use "../sass-utils/variables" as *;
+
+@font-face {
+    font-family: 'proxima-nova-condensed-regular';
+    src: url('/fonts/proximanovacond_regular.ttf');
+}
+
+@font-face {
+    font-family: 'proxima-nova-condensed-semibold';
+    src: url('/fonts/proximanovacond_semibold.woff');
+}
+
+@font-face {
+    font-family: 'proxima-nova-condensed-black';
+    src: url('/fonts/proximanovacond_black.otf');
+}
+
+* {
+    font-family: 'proxima-nova-condensed-semibold';
+    color: $textColor;
+}

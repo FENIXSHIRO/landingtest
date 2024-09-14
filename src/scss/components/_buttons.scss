@@ -1,0 +1,15 @@
+@use "../sass-utils/variables" as *;
+
+.button {
+    color: white;
+    background-color: $buttonColor;
+    width: 110px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+
+    &:hover {
+        background-color: $buttonHoverColor;
+    }
+}
