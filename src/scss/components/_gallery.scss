@@ -1,0 +1,57 @@
+@use "../sass-utils" as *;
+
+.gallery {
+    margin: 0 auto;
+    width: 1110px;
+    height: 979px;
+}
+
+.splide {
+    &__track {
+        margin-top: 55px;
+    }
+
+    &__top-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__pagination {
+        justify-content: center;
+        margin-top: 18px;
+        margin-bottom: 70px;
+        padding: 0;
+        gap: 10px;
+        &__page {
+            width: 214px;
+            height: 6px;
+            border: none;
+            background-color: #e6e6e6;
+        }
+        .is-active {
+            background-color: $accentColor;
+        }
+    }
+
+    h2 {
+        font-size: 56px;
+        line-height: 100%;
+        margin: 0;
+    }
+}
+
+.splide__arrow {
+    border: none;
+    width: 56px;
+    height: 56px;
+    background-color: $pinRadialColor;
+    border-radius: 100%;
+    padding: 17px 22px;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 20px;
+
+    &:hover {
+        background-color: $pinRadialColorHovered;
+    }
+}
