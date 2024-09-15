@@ -1,22 +1,3 @@
-.grid-list {
-    margin: 100px auto;
-    height: 936px;
-
-    &__header {
-        text-align: center;
-        font-size: 56px;
-        line-height: 100%;
-        margin-top: 0;
-        margin-bottom: 55px;
-    }
-
-    &__container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-    }
-}
-
 .grid-card {
     position: relative;
     overflow: hidden;

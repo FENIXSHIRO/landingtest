@@ -1,0 +1,145 @@
+@use "../sass-utils" as *;
+
+.banner {
+    display: flex;
+    height: 600px;
+    background-image: url("/img/bg.png");
+
+    &__container {
+        height: 340px;
+        width: 709px;
+        margin-top: 158px;
+        margin-left: 70px;
+    }
+
+    &__text {
+        font-size: 56px;
+        margin: 0;
+        line-height: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+.about-block {
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    width: 1110px;
+    height: 352px;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+
+    &__text {
+        width: 890px;
+        font-size: 32px;
+        line-height: 120%;
+        text-align: center;
+        margin: 100px 110px;
+
+        &_accent {
+            color: $accentColor;
+        }
+
+    }
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 185px;
+    row-gap: 83px;
+    justify-content: center;
+    margin: 100px auto;
+    width: 889px;
+    height: 287px;
+
+    &__container {
+        max-width: 245px;
+    }
+
+    &__number {
+        color: $accentColorTone;
+        font-size: 80px;
+        line-height: 80%;
+
+        &_plus {
+            font-size: 64px;
+            color: $accentColorTone;
+            line-height: 100%;
+            margin-left: 10px;
+        }
+
+        &_char {
+            font-family: 'proxima-nova-condensed-black';
+            font-size: 64px;
+            color: $accentColorTone;
+            line-height: 100%;
+            margin-right: 10px;
+        }
+    }
+
+    &__label {
+        font-family: 'proxima-nova-condensed-regular';
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+
+.mission {
+    display: flex;
+    margin-top: 100px;
+    width: 1250px;
+    height: 471px;
+    background-color: $accentColorTone;
+    position: relative;
+
+    &__img {
+        position: absolute;
+        margin-top: 47px;
+
+        &_right {
+            margin-left: 954px;
+        }
+    }
+
+    &__content {
+        margin: 0 auto;
+        margin-top: 140px;
+        height: 192px;
+    }
+
+    &__text {
+        font-family: 'proxima-nova-condensed-regular';
+        color: white;
+        font-size: 32px;
+        line-height: 150%;
+        text-align: center;
+        margin-top: 40px;
+
+        &_head {
+            font-family: 'proxima-nova-condensed-semibold';
+            font-size: 56px;
+            line-height: 100%;
+            margin: 0;
+        }
+    }
+
+}
+
+.grid-list {
+    margin: 100px auto;
+    height: 936px;
+
+    &__header {
+        text-align: center;
+        font-size: 56px;
+        line-height: 100%;
+        margin-top: 0;
+        margin-bottom: 55px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+}
