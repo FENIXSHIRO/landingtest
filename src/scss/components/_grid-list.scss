@@ -1,0 +1,80 @@
+.grid-list {
+    margin: 100px auto;
+    height: 936px;
+
+    &__header {
+        text-align: center;
+        font-size: 56px;
+        line-height: 100%;
+        margin-top: 0;
+        margin-bottom: 55px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+}
+
+.grid-card {
+    position: relative;
+    overflow: hidden;
+    width: 615px;
+    height: 260px;
+
+    &__content {
+        position: absolute;
+        bottom: -180px;
+        left: 0;
+        width: 615px;
+        height: 260px;
+        background-color: rgba($color: #2d3653, $alpha: 0.6);
+        padding-left: 20px;
+        padding-top: 5px;
+        transition: bottom 0.4s ease;
+    }
+
+    &:hover &__content {
+        bottom: 0;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 100%;
+        color: white;
+    }
+
+    &__text {
+        font-family: 'proxima-nova-condensed-regular';
+        font-size: 17px;
+        line-height: 140%;
+        color: white;
+        max-width: 480px;
+    }
+
+    &_img1 {
+        background-image: url("/img/grid1.png");
+        background-size: cover;
+    }
+    &_img2 {
+        background-image: url("/img/grid2.png");
+        background-size: cover;
+    }
+    &_img3 {
+        background-image: url("/img/grid3.png");
+        background-size: cover;
+    }
+    &_img4 {
+        background-image: url("/img/grid4.png");
+        background-size: cover;
+    }
+    &_img5 {
+        background-image: url("/img/grid5.png");
+        background-size: cover;
+    }
+    &_img6 {
+        background-image: url("/img/grid6.png");
+        background-size: cover;
+    }
+}
