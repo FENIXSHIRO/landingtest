@@ -105,3 +105,97 @@
         }
     }
 }
+
+@media screen and (max-width: 290px) {
+    .map {
+        height: 469px;
+        width: auto;
+    
+        &__header {
+            width: 290px;
+            height: 95px;
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-wrap: wrap;
+    
+            &__toggler {
+                display: flex;
+                width: auto;
+                height: 20px;
+                margin: 18px 5px;
+                margin-bottom: 0;
+                margin-right: 0;
+    
+                background: none;
+                border: none;
+                cursor: pointer;
+    
+                p {
+                    font-size: 20px;
+                    text-wrap: nowrap;
+                }
+    
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+    
+            &__region-list {
+                padding-left: 4px;
+                gap: 16px;
+                overflow-x: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+            &__region-item {
+                button {
+                    height: 60px;
+                    font-size: 14px;
+                    line-height: 114%;
+                    text-wrap: nowrap;
+                }      
+            }
+        }
+    
+        &__sub-menu {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+            width: 290px;
+            height: 158px;
+            gap: 30px;
+            overflow: hidden;
+    
+            &__region {
+                h3 {
+                    font-size: 14px;
+                }
+                p {
+                    margin: 0;
+                    margin-top: 12px;
+                    font-size: 14px;
+                    line-height: 100%;
+                }
+            }
+        }
+    
+        &__map-view {
+            width: 862px;
+            height: 445px;
+            margin: 0;
+            position: relative;
+            overflow: scroll;
+    
+            img {
+                position: absolute;
+                object-fit: contain;
+                width: auto;
+                height: 445px;
+            }
+        }
+    }
+}

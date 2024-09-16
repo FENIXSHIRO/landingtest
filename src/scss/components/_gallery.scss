@@ -55,3 +55,39 @@
         background-color: $pinRadialColorHovered;
     }
 }
+
+@media screen and (max-width: 290px) {
+    .gallery {
+        margin: 0 auto;
+        width: 280px;
+        height: 253px;
+    }
+    .splide {
+        &__track {
+            margin-top: 15px;
+            width: 280px;
+            height: 210px;
+            margin-bottom: 50px;
+        }
+
+        &__slide {
+            img {
+                width: 280px;
+                height: 210px;
+            }
+        }
+
+        &__pagination {
+            display: none;
+        }
+
+        h2 {
+            font-size: 28px;
+            text-wrap: nowrap;
+        }
+    }
+
+    .splide__arrows {
+        display: none;
+    }
+}

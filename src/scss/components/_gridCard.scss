@@ -60,3 +60,57 @@
         background-size: cover;
     }
 }
+
+@media screen and (max-width: 290px) {
+    .grid-card {
+        position: relative;
+        overflow: hidden;
+        width: 280px;
+        height: 60px;
+    
+        &__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 615px;
+            height: 260px;
+            background-color: rgba($color: #2d3653, $alpha: 0.6);
+            padding-left: 10px;
+            padding-top: 20px;
+            transition: bottom 0.4s ease;
+        }
+    
+        &:hover &__content {
+            bottom: 0;
+        }
+    
+        &__title {
+            font-size: 20px;
+            margin: 0;
+            text-wrap: wrap;
+        }
+    
+        &__text {
+            font-size: 16px;
+            max-width: 250px;
+        }
+        &_img1 {
+            background-position: top;
+        }
+        &_img2 {
+            background-position: top;
+        }
+        &_img3 {
+            background-position: top;
+        }
+        &_img4 {
+            background-position: top;
+        }
+        &_img5 {
+            background-position: top;
+        }
+        &_img6 {
+            background-position: top;
+        }
+    }
+}

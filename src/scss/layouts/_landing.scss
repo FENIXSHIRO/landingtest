@@ -29,6 +29,7 @@
     box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
 
     &__text {
+        text-wrap: balance;
         width: 890px;
         font-size: 32px;
         line-height: 120%;
@@ -208,6 +209,182 @@
         &_accent {
             margin: 0;
             color: $accentColor;
+        }
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .banner {
+        width: 290px;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    
+        &__container {
+            width: 280px;
+            height: 184px;
+            margin-top: 40px;
+            margin-left: 5px;
+        }
+    
+        &__text {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .about-block {
+        margin-top: 60px;
+        width: 290px;
+        height: 181px;
+    
+        &__text {
+            margin: 24px 0;
+            font-size: 16px;
+            text-wrap: pretty;    
+        }
+    }
+
+    .numbers {
+        flex-wrap: wrap;
+        margin: 50px auto;
+        width: 264px;
+        height: 242px;
+        column-gap: 0;
+        row-gap: 25px;
+        justify-content: space-around;
+    
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        &__number {
+            font-size: 40px;
+            margin: 0 auto;
+    
+            &_plus {
+                font-size: 30px;
+                margin-left: 3px;
+            }
+    
+            &_char {
+                font-size: 30px;
+                margin-right: 3px;
+            }
+        }
+    
+        &__label {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    .mission {
+        display: flex;
+        margin-top: 50px;
+        width: 290px;
+        height: 186px;
+    
+        &__img {
+            position: absolute;
+            margin-top: 10px;
+            width: 95px;
+            height: 155px;
+    
+            &_right {
+                margin-left: 200px;
+            }
+        }
+    
+        &__content {
+            margin: 0;
+            margin-top: 30px;
+            padding: 0 5px;
+            height: 122px;
+        }
+    
+        &__text {
+            font-size: 16px;
+            line-height: 130%;
+            margin-top: 5px;
+            text-wrap: stable;
+    
+            &_head {
+                margin: 0;
+                font-size: 28px;
+            }
+        }
+    
+    }
+
+    .grid-list {
+        margin: 50px auto;
+        height: auto;
+    
+        &__header {
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+    }
+
+    .benefits {
+        width: 290px;
+        height: 922px;
+        margin: 50px auto;
+        padding: 23px 0;
+    
+        &__title {
+            font-size: 27px;
+            text-wrap: nowrap;
+            margin-bottom: 40px;
+        }
+    
+        &__pin-container {
+            margin: 0;
+            margin-top: 30px;
+            width: 290px;
+            flex-wrap: wrap;
+            gap: 16px;
+            row-gap: 40px;
+        }
+    
+        &__pin {
+            width: 120px;
+            height: 108px;
+        }
+    
+        &__icon {
+            width: 40px;
+            height: 40px;
+            padding: 20px 40px 60px 40px;
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    
+        &__pin-text {
+            font-size: 16px;
+        }
+    
+        &__divider {
+            margin: 24px 0;
+            width: 280px
+        }
+    
+        &__text {
+            font-size: 22px;
+            margin-top: 0;
         }
     }
 }
