@@ -1,6 +1,16 @@
 @use "../sass-utils" as *;
 
 @font-face {
+    font-family: 'proxima-nova-regular';
+    src: url('/fonts/proximanova_regular.ttf');
+}
+
+@font-face {
+    font-family: 'proxima-nova-semibold';
+    src: url('/fonts/proximanova_semibold.ttf');
+}
+
+@font-face {
     font-family: 'proxima-nova-condensed-regular';
     src: url('/fonts/proximanovacond_regular.ttf');
 }

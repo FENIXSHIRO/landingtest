@@ -1,5 +1,107 @@
+@use "../sass-utils" as *;
+
 .map {
     width: 1250px;
     height: 774px;
-    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+
+    &__header {
+        width: 1250px;
+        height: 80px;
+        display: flex;
+        box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+
+        &__toggler {
+            display: flex;
+            width: 200px;
+            height: 24px;
+            margin: 26px 70px;
+            margin-right: 174px;
+
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            p {
+                margin: 0;
+                font-size: 24px;
+                line-height: 100%;
+            }
+
+            img {
+                margin: 0;
+                margin-left: 16px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &__region-list {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            gap: 30px;
+        }
+        &__region-item {
+            button {
+                height: 80px;
+                padding: 0;
+                font-size: 18px;
+                line-height: 111%;
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: $accentColorTone;
+                }
+            }  
+            &_active {
+                button {
+                    color: $accentColorTone;
+                    border-bottom: 3px solid $accentColor;
+                }
+            }         
+        }
+    }
+
+    &__sub-menu {
+        display: flex;
+        position: absolute;
+        top: -300px;
+        padding: 30px 70px;
+        width: 1250px;
+        height: 272px;
+        gap: 22px;
+        background-color: white;
+        box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.06);
+
+        &__region {
+            h3 {
+                margin: 0;
+                font-family: 'proxima-nova-semibold';
+            }
+            p {
+                margin: 0;
+                margin-top: 12px;
+                font-size: 18px;
+                line-height: 110%;
+                font-family: 'proxima-nova-regular';
+            }
+        }
+    }
+
+    &__map-view {
+        width: 1189px;
+        height: 604px;
+        margin: 0 30px;
+        margin-top: 90px;
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+    }
 }
